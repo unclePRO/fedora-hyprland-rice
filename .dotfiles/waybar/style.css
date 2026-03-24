@@ -1,0 +1,151 @@
+/* === Chronosync Red Focus Theme === */
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", "Inter", sans-serif;
+    font-size: 13px;
+    min-height: 0;
+}
+
+/* Color Palette - Chronosync Red */
+@define-color bg        rgba(10, 10, 10, 0.85);  /* Deep Black Glass */
+@define-color bg_alt    rgba(30, 0, 0, 0.9);      /* Dark Red Tint */
+@define-color accent    #ff0033;                  /* Pure Neon Red */
+@define-color accent_glow rgba(255, 0, 51, 0.4);  /* Red Halo */
+@define-color fg        #ffffff;                  /* Crisp White */
+@define-color fg_dim    #666666;                  /* Stealth Gray */
+
+window#waybar {
+    background: transparent;
+    color: @fg;
+}
+/* This hides the background and border when no app is open */
+window#waybar.empty #window {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    padding: 0;
+}
+/* The "Pill" Module Styling */
+#workspaces,
+#tray,
+#clock,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#battery,
+#custom-launcher,
+#window {
+    background-color: @bg;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 4px 12px;
+    margin: 6px 4px;
+    transition: all 0.3s cubic-bezier(.55,0,.1,1);
+}
+
+/* Center Window - The Chronosync Focus */
+#window {
+    background: linear-gradient(90deg, @accent, #990022);
+    color: #000000;
+    font-weight: bold;
+    border: none;
+    box-shadow: 0 0 15px @accent_glow;
+}
+
+/* Launcher - Stylized Icon */
+#custom-launcher {
+    color: @accent;
+    font-size: 18px;
+    padding-right: 15px;
+}
+
+/* Workspaces - Chronosync Pulse */
+#workspaces button {
+    color: @fg_dim;
+    padding: 0 8px;
+    margin: 0 2px;
+}
+
+#workspaces button.active {
+    color: @accent;
+    border-bottom: 2px solid @accent;
+    background: rgba(255, 0, 51, 0.1);
+}
+
+#workspaces button.urgent {
+    background-color: @accent;
+    color: @fg;
+    animation: blink 0.5s steps(5, start) infinite;
+}
+
+/* Modules with specific Red Focus */
+#clock { color: @fg; font-weight: bold; }
+#cpu { color: #ff5555; }
+#memory { color: #ff8888; }
+#wireplumber, 
+#pulseaudio {
+    background-color: @bg;
+    color: @accent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 0 12px;
+    margin: 6px 4px;
+    transition: all 0.3s ease;
+}
+#network { color: @fg; }
+#custom-bluetooth.connected {
+    color: #00ff99; /* Neon Green when connected */
+    box-shadow: 0 0 10px rgba(0, 255, 153, 0.4);
+}
+#battery.charging { color: #00ff99; }
+#battery.critical {
+    color: @accent;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink {
+    to { background-color: transparent; color: @accent; }
+}
+
+/* Tray cleaning */
+#tray { margin-right: 10px; }
+#wireplumber.muted,
+#pulseaudio.muted {
+    background-color: #330000;
+    color: #888888;
+}
+
+/* Bluetooth */
+#bluetooth {
+    background-color: @bg;
+    color: #0088ff; /* Classic Blue, or change to @accent for full Red Focus */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 0 12px;
+    margin: 6px 4px;
+}
+
+#bluetooth.connected {
+    color: @accent; /* Glows red when your headphones are on */
+    border: 1px solid @accent;
+}
+
+/* System Tray (Discord, Steam, etc.) */
+#tray {
+    background-color: @bg;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    margin: 6px 4px;
+    padding: 0 10px;
+}
+
+/* Hover Effects (Interactive) */
+#wireplumber:hover, 
+#bluetooth:hover, 
+#tray:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid @accent;
+}

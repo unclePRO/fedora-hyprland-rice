@@ -1,0 +1,9 @@
+background-color=#05030aff
+text-color=#e5e5f0ff
+border-color=#ff7a3cff
+border-radius=12
+border-size=2
+padding=8
+width=320
+max-visible=5
+default-timeout=4000

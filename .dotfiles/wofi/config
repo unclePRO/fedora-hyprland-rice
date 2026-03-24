@@ -1,0 +1,14 @@
+show=drun
+prompt=aviral
+
+# Geometry
+width=40%
+height=40%
+location=center
+# Do NOT set x or y if you want true center
+# x=0
+# y=0
+
+style=/home/aviral/.config/wofi/style.css
+location=center
+allow_images=false
