@@ -1,4 +1,4 @@
-/* === Chronosync Red Focus Theme === */
+/* === Chronosync Red Theme === */
 
 * {
     border: none;
@@ -8,13 +8,13 @@
     min-height: 0;
 }
 
-/* Color Palette - Chronosync Red */
-@define-color bg        rgba(10, 10, 10, 0.85);  /* Deep Black Glass */
-@define-color bg_alt    rgba(30, 0, 0, 0.9);      /* Dark Red Tint */
-@define-color accent    #ff0033;                  /* Pure Neon Red */
-@define-color accent_glow rgba(255, 0, 51, 0.4);  /* Red Halo */
-@define-color fg        #ffffff;                  /* Crisp White */
-@define-color fg_dim    #666666;                  /* Stealth Gray */
+/* Color Palette Red*/
+@define-color bg        rgba(10, 10, 10, 0.85);  
+@define-color bg_alt    rgba(30, 0, 0, 0.9);     
+@define-color accent    #ff0033;                
+@define-color accent_glow rgba(255, 0, 51, 0.4);  
+@define-color fg        #ffffff;                  
+@define-color fg_dim    #666666;                 
 
 window#waybar {
     background: transparent;
@@ -46,7 +46,7 @@ window#waybar.empty #window {
     transition: all 0.3s cubic-bezier(.55,0,.1,1);
 }
 
-/* Center Window - The Chronosync Focus */
+/* Center Window*/
 #window {
     background: linear-gradient(90deg, @accent, #990022);
     color: #000000;
@@ -55,14 +55,14 @@ window#waybar.empty #window {
     box-shadow: 0 0 15px @accent_glow;
 }
 
-/* Launcher - Stylized Icon */
+/* Launcher*/
 #custom-launcher {
     color: @accent;
     font-size: 18px;
     padding-right: 15px;
 }
 
-/* Workspaces - Chronosync Pulse */
+/* Workspaces*/
 #workspaces button {
     color: @fg_dim;
     padding: 0 8px;
@@ -81,7 +81,7 @@ window#waybar.empty #window {
     animation: blink 0.5s steps(5, start) infinite;
 }
 
-/* Modules with specific Red Focus */
+/* Modules*/
 #clock { color: @fg; font-weight: bold; }
 #cpu { color: #ff5555; }
 #memory { color: #ff8888; }

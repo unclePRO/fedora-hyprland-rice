@@ -8,6 +8,12 @@ ImageMagick bibata-cursor-themes network-manager-applet blueman \
 lxqt-policykit grim slurp wl-clipboard wf-recorder nwg-look qt6ct \
 xdg-desktop-portal-hyprland jetbrains-mono-fonts-all fontawesome-fonts-all
 
+# 1. Enable COPR and Install Nerd Fonts (Critical for Waybar Icons)
+echo "Setting up font for waybar: JetBrains Mono Nerd Font..."
+sudo dnf install -y dnf-plugins-core  # Required to use the 'copr' command
+sudo dnf copr enable -y maveonair/jetbrains-mono-nerd-fonts
+sudo dnf install -y jetbrains-mono-nerd-fonts
+
 # making cursor theme
 mkdir -p ~/.local/share/icons/ChronoSync-Red/cursors
 cp -r /usr/share/icons/Bibata-Modern-Amber/* ~/.local/share/icons/ChronoSync-Red/

@@ -9,6 +9,6 @@ location=center
 # x=0
 # y=0
 
-style=/home/aviral/.config/wofi/style.css
+style=style.css
 location=center
 allow_images=false
