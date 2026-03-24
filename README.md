@@ -1,7 +1,7 @@
 # Fedora + Hyprland rice
 > A high-performance, focus-oriented Hyprland environment for Fedora 43.
 
-## 🎨 Design Philosophy: Chronosync
+## Design Philosophy: Chronosync
 The Chronosync environment is a specialized desktop workspace built for high-stakes development cycles, specifically optimized for the Fedora 43 ecosystem. As a developer in a technical academic environment, the focus is on **"Visual Synchronization"**—the concept that the desktop should feel like an immediate extension of the user's thought process.
 
 The **Red Focus** color palette utilizes high-contrast gradients (`rgba(ff7a3cff)` and `rgba(ff3c6aff)`) to emphasize the active task while peripheral windows recede into the background. A core technical feature is the **"Main Character" dispatcher**. By implementing a custom toggle that forces a 60% viewport width in a floating state, Chronosync ensures that web-based AI tools maintain their desktop layout, effectively solving the "scroll-jump" bug common in dynamic tiling layouts. This creates a dual-workflow: deep focus on the left (the Main Character) and secondary terminals or documentation on the right.
@@ -10,7 +10,7 @@ The system leverages a purely native Wayland stack to minimize input latency. Th
 
 ---
 
-## 📦 Dependencies
+## Dependencies
 Ensure the following packages are installed via `dnf` to maintain the integrity of the Red Focus workflow.
 
 ### Core Environment
