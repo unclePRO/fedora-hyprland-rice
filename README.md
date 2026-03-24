@@ -1,12 +1,18 @@
 # Fedora + Hyprland rice
 > A high-performance, focus-oriented Hyprland environment for Fedora 43.
 
-## Design Philosophy: Chronosync
-The Chronosync environment is a specialized desktop workspace built for high-stakes development cycles, specifically optimized for the Fedora 43 ecosystem. As a developer in a technical academic environment, the focus is on **"Visual Synchronization"**—the concept that the desktop should feel like an immediate extension of the user's thought process.
+## Theme: Chronosync
 
-The **Red Focus** color palette utilizes high-contrast gradients (`rgba(ff7a3cff)` and `rgba(ff3c6aff)`) to emphasize the active task while peripheral windows recede into the background. A core technical feature is the **"Main Character" dispatcher**. By implementing a custom toggle that forces a 60% viewport width in a floating state, Chronosync ensures that web-based AI tools maintain their desktop layout, effectively solving the "scroll-jump" bug common in dynamic tiling layouts. This creates a dual-workflow: deep focus on the left (the Main Character) and secondary terminals or documentation on the right.
+This rice is a technical environment optimized for high-intensity development cycles within the Fedora 43 ecosystem. The architecture is centered on **"Visual Synchronization"**—a methodology focused on reducing the delay between system feedback and user intent through specific UI/UX constraints. By prioritizing efficiency and stability, the system transforms the desktop into a streamlined tool for complex technical workflows.
 
-The system leverages a purely native Wayland stack to minimize input latency. The status bar, powered by **Waybar v0.14.0**, is stripped of clutter and configured with hardware-agnostic network modules to ensure compatibility with competition requirements. The integration of a custom-built cursor theme, **ChronoSync-Red**, reinforces the theme and ensures the pointer remains trackable against vibrant window borders.
+### The "Red Focus" Visual Stack
+The system utilizes a **Red Focus** color palette to manage visual priority and spatial awareness. By leveraging high-contrast gradients using `rgba(ff7a3cff)` and `rgba(ff3c6aff)` on active window borders, the environment creates an unmistakable focal point for the user. To maintain visual depth without sacrificing legibility, the system employs an 8-pass blur effect and 0.75 opacity for terminal windows, allowing background processes to remain peripherally visible while the primary task remains sharp. These background processes and secondary windows are designed to recede into the workspace, which minimizes cognitive load during extended sessions in demanding technical environments.
+
+### Chronometric Synchronization
+The interaction model is built on **Chronometric Sync**, treating the desktop as a precision instrument where every element is intentional and predictable:
+* **Engineered Cursor Tracking:** Using **ImageMagick**, the system generates a custom cursor with a 2px black outline. This modification ensures 100% visibility against the vibrant red system borders, preventing "pointer loss" during rapid window switching or multi-monitor transitions.
+* **Wayland-Native Stack:** The environment enforces a purely native Wayland stack for core tools like **Brave** and **Kitty**. By utilizing specialized easing curves like `easeOutQuint` and `almostLinear` for system-wide animations, the setup provides immediate visual confirmation of workspace transitions. This architecture minimizes input latency and provides a tactile, mechanical response to user commands.
+* **Hardware-Agnostic Stability:** Configured with specialized status modules for Ethernet and USB management, the system is designed to meet the rigorous connectivity requirements of hardware-debugging and laboratory environments. This ensures that the workstation remains reliable regardless of the physical peripheral setup.
 
 ---
 
@@ -81,3 +87,4 @@ hyprctl setcursor Bibata-Modern-Amber 24
 - In `hyprlock.conf` -> line 10: add your wallpaper location.
 - In `hyprpaper.conf` -> add your wallpaper location in place for both the already given ones for it to work.
 - If wofi does not appear to be red (chronosync theme), fix this in `~/.config/wofi/config` -> line 12: style = "location of style.css". 
+
