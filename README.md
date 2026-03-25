@@ -5,6 +5,8 @@
 
 https://github.com/user-attachments/assets/7f4af73b-e20c-4a7f-8051-e8d3f9e6a63d
 
+Find screenshots and wallpapers in `assets` folder!
+
 ## Theme: Chronosync
 
 This rice is a technical environment optimized for high-intensity development cycles within the Fedora 43 ecosystem. The architecture is centered on **"Visual Synchronization"**—a methodology focused on reducing the delay between system feedback and user intent through specific UI/UX constraints. By prioritizing efficiency and stability, the system transforms the desktop into a streamlined tool for complex technical workflows.
