@@ -86,5 +86,6 @@ hyprctl setcursor Bibata-Modern-Amber 24
 
 - In `hyprlock.conf` -> line 10: add your wallpaper location.
 - In `hyprpaper.conf` -> add your wallpaper location in place for both the already given ones for it to work.
-- If wofi does not appear to be red (chronosync theme), fix this in `~/.config/wofi/config` -> line 12: style = "location of style.css". 
+- If wofi does not appear to be red (chronosync theme), fix this in `~/.config/wofi/config` -> line 12: style = "location of style.css".
+- Change the path to your username wherever getting errors! Please check. 
 
