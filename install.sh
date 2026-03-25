@@ -24,12 +24,4 @@ Name=ChronoSync-Red
 Inherits=Bibata-Modern-Amber
 EOF
 
-# final step
-mkdir -p ~/.config
-ln -sf $(pwd)/config/hypr ~/.config/
-ln -sf $(pwd)/config/waybar ~/.config/
-ln -sf $(pwd)/config/kitty ~/.config/
-ln -sf $(pwd)/config/wofi ~/.config/
-ln -sf $(pwd)/config/mako ~/.config/
-
-echo "✅ System Sychronized. Log out and select Hyprland session."
+echo "Dependencies installed"
