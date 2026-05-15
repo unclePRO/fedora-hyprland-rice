@@ -62,9 +62,9 @@ chmod +x install_dotfiles.sh
 ---
 
 ## ⌨️ Essential Keybinds
-* `SUPER + Enter` : Open Kitty Terminal
-* `SUPER + Space` : Open Wofi (App Launcher)
-* `SUPER + Q` : Close active window
+* `SUPER + Q` : Open Kitty Terminal
+* `SUPER + R` : Open Wofi (App Launcher)
+* `SUPER + C` : Close active window
 * `SUPER + M` : Exit Hyprland safely
 * `Print Screen` : Custom screenshot selection (saves to `~/Pictures`)
 
