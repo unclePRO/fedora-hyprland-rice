@@ -51,6 +51,19 @@ if pgrep -x "mako" > /dev/null; then
     makoctl reload
 fi
 
+
+echo "⚙️ Configuring terminal prompt and Fastfetch..."
+
+# 1. Add Fastfetch to startup (Checks if it's already there to prevent duplicates)
+if ! grep -q "fastfetch" ~/.bashrc; then
+    echo -e "\n# Launch Fastfetch on terminal start\nfastfetch -c ~/.config/fastfetch/config.json" >> ~/.bashrc
+fi
+
+if ! grep -q "export PS1" ~/.bashrc; then
+    echo -e "\n# Minimal Glassy Indigo Prompt" >> ~/.bashrc
+    echo 'export PS1="\[\e[1;35m\]➜ \[\e[1;34m\]\W \[\e[0m\]"' >> ~/.bashrc
+fi
+
 echo "=============================================================================="
 echo "🎉 Installation Complete!"
 echo "If you are currently using Hyprland, press [SUPER + SHIFT + R] to reload."
