@@ -1,0 +1,14 @@
+show=drun
+prompt=search
+
+# Geometry
+width=40%
+height=40%
+location=center
+# Do NOT set x or y if you want true center
+# x=0
+# y=0
+
+style=style.css
+allow_images=true
+image_size=24

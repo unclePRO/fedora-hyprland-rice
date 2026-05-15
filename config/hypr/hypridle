@@ -1,0 +1,14 @@
+general {
+    lock_cmd = pidof hyprlock || hyprlock
+    before_sleep_cmd = loginctl lock-session
+}
+
+listener {
+    timeout = 300      # 5 minutes idle → lock
+    on-timeout = loginctl lock-session
+}
+
+listener {
+    timeout = 600      # 10 minutes idle → suspend
+    on-timeout = systemctl suspend
+}

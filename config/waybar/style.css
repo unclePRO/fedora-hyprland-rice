@@ -1,0 +1,122 @@
+/* Minimal Glassy Grey Theme */
+
+* {
+    border: none;
+    border-radius: 0;
+    font-family: "JetBrainsMono Nerd Font", "Inter", sans-serif;
+    font-size: 13px;
+    min-height: 0;
+}
+
+@define-color bar_bg rgba(10, 10, 15, 0.4);
+@define-color accent    #845ef7;                  /* Calm Indigo */
+@define-color fg        #e0e0e0;                  
+@define-color fg_dim    #9192a8;                  
+
+/* The Main Continuous Bar */
+window#waybar {
+    background: @bar_bg;
+    color: @fg;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15); 
+}
+
+window#waybar.empty #window {
+    background-color: transparent;
+}
+
+#workspaces,
+#tray,
+#clock,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#wireplumber,
+#battery,
+#custom-launcher,
+#bluetooth,
+#window,
+#temperature {
+    background-color: transparent;
+    border: none;
+    padding: 0 10px;
+    margin: 0;
+    color: @fg;
+    transition: all 0.2s ease;
+}
+
+/* Center Title */
+#window {
+    font-weight: normal;
+    color: #ffffff;
+}
+
+/* Launcher Icon */
+#custom-launcher {
+    color: @accent;
+    font-size: 16px;
+    padding-left: 15px;
+    padding-right: 5px;
+}
+
+/* Workspaces */
+#workspaces button {
+    color: @fg_dim;
+    padding: 0 6px;
+    margin: 0 2px;
+}
+
+#workspaces button.active {
+    color: @accent;
+    border-bottom: 2px solid @accent; 
+}
+
+#workspaces button:hover {
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 4px;
+    box-shadow: none;
+}
+
+#workspaces button.urgent {
+    color: #f38ba8;
+}
+
+/* Retaining Module Accent Colors */
+#clock { color: #ffffff; font-weight: bold; }
+#cpu { color: #f5e0dc; }
+#memory { color: #f2cdcd; }
+#wireplumber, #pulseaudio { color: #91d7e3; }
+#network { color: #b4befe; }
+#bluetooth { color: #89b4fa; }
+#bluetooth.connected { color: #74c7ec; }
+#battery.charging { color: #a6e3a1; }
+#battery.critical { color: #f38ba8; animation: pulse 1s infinite; }
+#temperature { color: @accent; font-weight: bold; }
+
+/* Interactive Hover States */
+#wireplumber:hover, 
+#bluetooth:hover, 
+#network:hover,
+#battery:hover,
+#cpu:hover,
+#memory:hover,
+#temperature:hover,
+#clock:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 6px;
+    color: #ffffff;
+}
+
+/* Critical Temperature Warning */
+#temperature.critical {
+    color: #f38ba8;
+    animation: pulse 1s infinite;
+}
+
+@keyframes pulse {
+    0% { color: #f38ba8; }
+    50% { color: @fg_dim; }
+    100% { color: #f38ba8; }
+}
+
+#tray { margin-right: 15px; }
