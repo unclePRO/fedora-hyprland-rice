@@ -1,8 +1,6 @@
 # 🌌 Glassy Indigo | Hyprland Setup
 **A premium, hyper-optimized Wayland environment.**
 
-*(Tip: Replace this placeholder with an imgur or github link to a sick screenshot of your desktop!)*
-
 Welcome to **Glassy Indigo**. This isn't just a collection of config files; it's a complete, automated setup designed to transform a fresh Fedora installation into a stunning, minimalist, and highly functional cyberpunk workspace. 
 
 Built with a focus on deep system integration, this rice features a custom Macbook-style floating Waybar, transparent blur effects, intelligent power management, and a zero-clutter terminal experience.
