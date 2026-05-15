@@ -73,7 +73,7 @@ chmod +x install_dotfiles.sh
 ## ☕ Support the Developer
 If you are enjoying this setup and the automation scripts saved you hours of debugging, consider supporting my work! Building and maintaining custom system architectures takes a lot of coffee. 
 
-**[Support me on Ko-fi!](https://kofi.com/unclepro)**
+**[Support me on Ko-fi!](https://ko-fi.com/unclepro)**
 
 ---
 *Built with 💜 by Uncle PRO*
