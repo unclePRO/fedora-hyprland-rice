@@ -61,7 +61,7 @@ fi
 
 if ! grep -q "export PS1" ~/.bashrc; then
     echo -e "\n# Minimal Glassy Indigo Prompt" >> ~/.bashrc
-    echo 'export PS1="\[\e[1;35m\]➜ \[\e[1;34m\]\W \[\e[0m\]"' >> ~/.bashrc
+    echo 'export PS1="\[\e[1;35m\]\w ❯\[\e[0m\] "' >> ~/.bashrc
 fi
 
 echo "=============================================================================="
