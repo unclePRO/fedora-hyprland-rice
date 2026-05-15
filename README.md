@@ -36,7 +36,7 @@ I have engineered this setup to be as "plug-and-play" as humanly possible. No ma
 ### Step 1: Prepare your system
 Ensure you are on a fresh installation of **Fedora 43**. Open your default terminal and navigate to where you extracted this folder:
 ```bash
-cd Downloads/uncle-hyprland-dotfiles
+cd Downloads/fedora-hyprland-rice
 ```
 
 ### Step 2: Run the Dependency Installer
