@@ -107,7 +107,7 @@
     "format": "{icon}  {capacity:2}%",
     "format-charging": "  {capacity:2}%",
     "format-icons": ["", "", "", "", ""],
-    "on-click": "~/.config/scripts/power_saver.sh"
+    "on-click": "kitty -e ~/.local/bin/battop"
   },
 
   "clock": {

@@ -55,6 +55,12 @@ sudo dnf install -y flatpak
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak install -y flathub io.missioncenter.MissionCenter
 
+# downloading battop
+echo "🔋 Installing battop (Local User)..."
+mkdir -p ~/.local/bin
+wget -q --show-progress -O ~/.local/bin/battop https://github.com/svartalf/rust-battop/releases/download/v0.2.4/battop-v0.2.4-x86_64-unknown-linux-gnu
+chmod +x ~/.local/bin/battop
+
 # 7. Nerd Fonts (Crucial for Waybar icons)
 echo "🔡 Installing JetBrains Mono Nerd Font..."
 FONT_DIR="$HOME/.local/share/fonts"
