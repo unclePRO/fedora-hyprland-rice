@@ -24,7 +24,8 @@
     "temperature",
     "memory",
     "battery",
-    "tray"
+    "tray",
+    "custom/power"
   ],
 
   "custom/launcher": {
@@ -119,5 +120,11 @@
   "tray": {
     "icon-size": 14,
     "spacing": 8
-  }
+  },
+
+  "custom/power": {
+    "format": "⏻",
+    "tooltip": false,
+    "on-click": "wlogout --protocol layer-shell"
+ }
 }
