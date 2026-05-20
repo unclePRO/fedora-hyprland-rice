@@ -20,7 +20,8 @@ sudo dnf install -y \
     waybar \
     mako \
     wofi \
-    lxqt-policykit 
+    lxqt-policykit \
+    wlogout
 
 # 3. Terminal, File Manager, & System Monitors
 echo "🪟 Installing terminal, file manager, and CLI utilities..."

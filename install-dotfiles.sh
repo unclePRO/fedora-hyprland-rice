@@ -16,6 +16,7 @@ mkdir -p ~/.config/wofi
 mkdir -p ~/.config/fastfetch
 mkdir -p ~/.config/scripts
 mkdir -p ~/.config/wallpapers
+mkdir -p ~/.config/wlogout
 mkdir -p ~/.local/share/icons
 
 # 2. Copy the Config Files & Assets
@@ -28,6 +29,7 @@ cp -r config/wofi/* ~/.config/wofi/
 cp -r config/fastfetch/* ~/.config/fastfetch/
 cp -r config/scripts/* ~/.config/scripts/
 cp -r config/wallpapers/* ~/.config/wallpapers/
+cp -r config/wlogout/* ~/.config/wlogout/
 
 # 3. Install the Custom Cursor
 echo "🖱️ Installing ChronoSync-Red cursor..."
