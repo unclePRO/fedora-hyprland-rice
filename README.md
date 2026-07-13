@@ -1,5 +1,8 @@
-# 🌌 Glassy Indigo | Hyprland Setup
+# Fedora Hyprland Setup
 **A premium, hyper-optimized Wayland environment.**
+*Preview:*
+https://github.com/user-attachments/assets/86d9809b-7f37-4734-9688-3d8757a3d8f0
+
 
 Welcome to **Glassy Indigo**. This isn't just a collection of config files; it's a complete, automated setup designed to transform a fresh Fedora installation into a stunning, minimalist, and highly functional cyberpunk workspace. 
 
@@ -7,20 +10,20 @@ Built with a focus on deep system integration, this rice features a custom Macbo
 
 ---
 
-## ⚡ Features
+## Features
 
 * **Window Manager:** Hyprland (Smooth animations, glassy borders, Wayland native)
 * **Bar:** Waybar (Custom thin, floating Macbook-style with purple/indigo accents)
 * **Terminal:** Kitty (Configured for speed and minimal aesthetics)
 * **Shell:** Bash (Featuring a custom, ultra-minimal `➜` prompt + Fastfetch auto-start)
 * **App Launcher:** Wofi (Styled to match the glassy aesthetic)
-* **Notifications:** Mako (Sleek, unobtrusive popups)
+* **Notifications:** Swaync (Sleek, unobtrusive popups)
 * **Power Management:** Hypridle & Hyprlock (Smart 5-minute lock & 10-minute suspend)
 * **System Monitor:** Btop & Mission Center (Flatpak)
 
 ---
 
-## ⚠️ OS Compatibility (CRITICAL)
+## OS Compatibility (CRITICAL)
 
 **This setup is explicitly optimized and strictly tested for Fedora 43.** Why not Fedora 44? 
 Fedora 44 is currently experiencing upstream dependency conflicts with the newest Wayland/Aquamarine libraries in the community repositories. To guarantee a flawless, crash-free, one-click installation, this script targets the rock-solid stability of **Fedora 43**. 
@@ -29,7 +32,7 @@ Fedora 44 is currently experiencing upstream dependency conflicts with the newes
 
 ---
 
-## 🛠️ Installation Guide
+## Installation Guide
 
 I have engineered this setup to be as "plug-and-play" as humanly possible. No manual compiling, no hunting down missing fonts. The scripts do all the heavy lifting.
 
@@ -61,7 +64,7 @@ chmod +x install_dotfiles.sh
 
 ---
 
-## ⌨️ Essential Keybinds
+## Essential Keybinds
 * `SUPER + Q` : Open Kitty Terminal
 * `SUPER + R` : Open Wofi (App Launcher)
 * `SUPER + C` : Close active window
@@ -76,4 +79,4 @@ If you are enjoying this setup and the automation scripts saved you hours of deb
 **[Support me on Ko-fi!](https://ko-fi.com/unclepro)**
 
 ---
-*Built with 💜 by Uncle PRO*
+*Built with 💜 by unclepro*
