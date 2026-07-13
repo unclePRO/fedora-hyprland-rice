@@ -73,7 +73,7 @@ FONT_DIR="$HOME/.local/share/fonts"
 mkdir -p "$FONT_DIR"
 cd /tmp
 wget -q --show-progress https://github.com/ryanoasis/nerd-fonts/releases/latest/download/JetBrainsMono.zip
-unzip -q JetBrainsMono.zip -d "$FONT_DIR"
+unzip -q -o JetBrainsMono.zip -d "$FONT_DIR"
 rm JetBrainsMono.zip
 fc-cache -fv
 
