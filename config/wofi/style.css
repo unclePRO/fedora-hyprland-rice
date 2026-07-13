@@ -4,7 +4,7 @@ window {
   border: 2px solid rgba(132, 94, 247, 0.8);   
   border-radius: 16px;
   /* Liquid glass navy base */
-  background-color: rgba(20, 20, 30, 0.35);    
+  background-color: rgba(20, 20, 30, 0.65);    
   /* Soft indigo glow */
   box-shadow: 0 0 22px rgba(132, 94, 247, 0.5);
 }

@@ -1,0 +1,135 @@
+/* ==========================================================
+ * SWAYNC CONFIGURATION
+ * Aesthetic: macOS Control Center / Pure Glass
+ * ========================================================== */
+
+* {
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-weight: bold;
+}
+
+/* --- 1. NUKE LIBADWAITA DEFAULT OPAQUE BACKGROUNDS --- */
+window,
+.background,
+.blanket,
+box {
+    background: transparent !important;
+    background-color: transparent !important;
+    box-shadow: none !important;
+}
+
+/* --- 2. THE MAIN GLASS PANEL --- */
+.control-center {
+    background: rgba(10, 25, 35, 0.7) !important;
+    border-radius: 18px; 
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 16px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4) !important;
+}
+
+/* --- 3. WIDGET CARDS (Floating effect inside the panel) --- */
+.widget-title, 
+.widget-mpris, 
+.widget-volume, 
+.widget-backlight, 
+.widget-dnd,
+.widget-buttons-grid {
+    background: rgba(255, 255, 255, 0.1) !important; /* Calmed this down slightly for better contrast */
+    border-radius: 14px;
+    margin-bottom: 12px; 
+    padding: 12px;
+}
+
+/* --- 4. VOLUME & BRIGHTNESS SLIDERS --- */
+.widget-volume,
+.widget-backlight {
+    color: #ffffff;
+    font-size: 16px; 
+}
+
+scale trough {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 8px;
+    min-height: 8px;
+}
+
+scale highlight {
+    background: #88c0d0; 
+    border-radius: 8px;
+}
+
+/* --- 5. MEDIA PLAYER --- */
+.widget-mpris {
+    color: #ffffff;
+}
+.widget-mpris-player > box > image {
+    margin-right: 14px;
+    border-radius: 8px;
+}
+
+/* --- 6. HEADER & BUTTONS --- */
+.widget-title {
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.widget-title > button {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 6px 12px;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.widget-title > button:hover {
+    background: rgba(191, 97, 106, 0.8); 
+}
+
+/* --- 7. NOTIFICATION BUBBLES --- */
+.notification {
+    background: rgba(30, 45, 60, 0.85) !important; /* Much more opaque, dark glass */
+    border: 1px solid rgba(255, 255, 255, 0.15); /* Gives the bubble a clean edge */
+    border-radius: 14px;
+    margin: 8px 0;
+    padding: 0;
+}
+
+.notification-content {
+    background: transparent !important;
+    padding: 12px;
+    border-radius: 14px;
+}
+
+.summary {
+    color: #ffffff;
+    font-size: 14px;
+}
+.time {
+    color: #88c0d0;
+    font-size: 12px;
+}
+.body {
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 13px;
+}
+
+/* --- 8. POWER PROFILE BUTTONS --- */
+.widget-buttons-grid {
+    padding: 8px;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button {
+    background: rgba(255, 255, 255, 0.1);
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin: 4px;
+    border: none;
+    transition: all 0.2s ease;
+}
+
+.widget-buttons-grid > flowbox > flowboxchild > button:hover {
+    background: rgba(136, 192, 208, 0.8); 
+    color: #11111b; 
+}

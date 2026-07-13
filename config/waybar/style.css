@@ -1,17 +1,21 @@
-/* Minimal Glassy Grey Theme */
+/* ==========================================================
+ * WAYBAR CONFIGURATION
+ * Aesthetic: Linux Pro / Apple Glass (Icon-Heavy)
+ * ========================================================== */
 
 * {
     border: none;
     border-radius: 0;
-    font-family: "JetBrainsMono Nerd Font", "Inter", sans-serif;
-    font-size: 13px;
+    font-family: "JetBrainsMono Nerd Font", sans-serif;
+    font-size: 14px; 
+    font-weight: 600; 
     min-height: 0;
 }
 
-@define-color bar_bg rgba(10, 10, 15, 0.4);
-@define-color accent    #845ef7;                  /* Calm Indigo */
-@define-color fg        #e0e0e0;                  
-@define-color fg_dim    #9192a8;                  
+@define-color bar_bg rgba(10, 25, 35, 0.7); 
+@define-color fg        #ffffff;                 
+@define-color fg_dim    rgba(255, 255, 255, 0.6);                 
+@define-color accent    #88c0d0; /* Soft teal accent */
 
 /* The Main Continuous Bar */
 window#waybar {
@@ -24,115 +28,120 @@ window#waybar.empty #window {
     background-color: transparent;
 }
 
+/* Base formatting for all modules */
 #workspaces,
 #tray,
 #clock,
 #cpu,
 #memory,
-#network,
-#pulseaudio,
 #wireplumber,
+#backlight,
 #battery,
-#custom-launcher,
+#custom-linux,
+#custom-controlcenter,
 #bluetooth,
 #window,
 #temperature {
     background-color: transparent;
     border: none;
-    padding: 0 10px;
-    margin: 0;
+    padding: 0 12px; /* Increased padding for better click targets */
+    margin: 2px 2px;
     color: @fg;
+    border-radius: 6px;
     transition: all 0.2s ease;
 }
 
-/* Center Title */
-#window {
-    font-weight: normal;
-    color: #ffffff;
+/* --- BIGGER ICONS FOR HARDWARE/RIGHT MODULES --- */
+#cpu,
+#memory,
+#wireplumber,
+#backlight,
+#battery,
+#custom-controlcenter,
+#bluetooth,
+#temperature,
+#custom-linux {
+    font-size: 18px; /* Bumps up icon size for that Mac menu bar weight */
 }
 
-/* Launcher Icon */
-#custom-launcher {
-    color: @accent;
-    font-size: 16px;
+/* --- LEFT MODULES --- */
+
+/* The Linux Logo */
+#custom-linux {
     padding-left: 15px;
-    padding-right: 5px;
+    padding-right: 10px;
 }
 
-/* Workspaces */
 #workspaces button {
     color: @fg_dim;
-    padding: 0 6px;
+    padding: 0 8px;
     margin: 0 2px;
+    font-weight: 700;
+    transition: all 0.2s ease;
 }
 
 #workspaces button.active {
-    color: @accent;
-    border-bottom: 2px solid @accent; 
+    color: @fg;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
 }
 
 #workspaces button:hover {
-    background-color: rgba(255, 255, 255, 0.05);
-    border-radius: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 6px;
     box-shadow: none;
 }
 
 #workspaces button.urgent {
-    color: #f38ba8;
+    color: #bf616a; 
 }
 
-/* Retaining Module Accent Colors */
-#clock { color: #ffffff; font-weight: bold; }
-#cpu { color: #f5e0dc; }
-#memory { color: #f2cdcd; }
-#wireplumber, #pulseaudio { color: #91d7e3; }
-#network { color: #b4befe; }
-#bluetooth { color: #89b4fa; }
-#bluetooth.connected { color: #74c7ec; }
-#battery.charging { color: #a6e3a1; }
-#battery.critical { color: #f38ba8; animation: pulse 1s infinite; }
-#temperature { color: @accent; font-weight: bold; }
+/* Active Window Title */
+#window {
+    color: @fg_dim;
+    font-weight: normal;
+}
+
+/* --- CENTER MODULES --- */
+
+/* Center Clock */
+#clock { 
+    color: @fg;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+/* --- RIGHT MODULES --- */
 
 /* Interactive Hover States */
+#custom-linux:hover,
+#custom-controlcenter:hover,
 #wireplumber:hover, 
+#backlight:hover,
 #bluetooth:hover, 
-#network:hover,
 #battery:hover,
 #cpu:hover,
 #memory:hover,
 #temperature:hover,
 #clock:hover {
-    background-color: rgba(255, 255, 255, 0.08);
-    border-radius: 6px;
-    color: #ffffff;
+    background-color: rgba(255, 255, 255, 0.15);
 }
 
-/* Critical Temperature Warning */
-#temperature.critical {
-    color: #f38ba8;
-    animation: pulse 1s infinite;
+/* Hardware Warnings */
+#battery.warning {
+    color: #ebcb8b; 
+}
+#battery.critical, #temperature.critical {
+    color: #bf616a; 
+    animation: pulse 2s infinite;
 }
 
 @keyframes pulse {
-    0% { color: #f38ba8; }
+    0% { color: #bf616a; }
     50% { color: @fg_dim; }
-    100% { color: #f38ba8; }
+    100% { color: #bf616a; }
 }
 
-#tray { margin-right: 15px; }
-
-#custom-power {
-    color: #cba6f7; /* Soft purple icon */
-    background-color: rgba(30, 30, 46, 0.5); /* Glassy dark background */
-    border-radius: 10px;
-    margin: 4px 8px;
-    padding: 0px 12px;
-    font-size: 16px;
-    transition: all 0.3s ease;
-}
-
-#custom-power:hover {
-    background-color: rgba(203, 166, 247, 0.8); /* Glows purple on hover */
-    color: #11111b; /* Icon turns dark on hover */
-    box-shadow: 0px 0px 10px rgba(203, 166, 247, 0.5);
+#tray { 
+    margin-right: 5px; 
 }
