@@ -1,6 +1,8 @@
 # Fedora Hyprland Setup
 **A premium, hyper-optimized Wayland environment.**
 *Preview:*
+
+
 https://github.com/user-attachments/assets/86d9809b-7f37-4734-9688-3d8757a3d8f0
 
 
