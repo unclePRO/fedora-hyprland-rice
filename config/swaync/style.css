@@ -1,6 +1,5 @@
 /* ==========================================================
  * SWAYNC CONFIGURATION
- * Aesthetic: macOS Control Center / Pure Glass
  * ========================================================== */
 
 * {
@@ -8,7 +7,6 @@
     font-weight: bold;
 }
 
-/* --- 1. NUKE LIBADWAITA DEFAULT OPAQUE BACKGROUNDS --- */
 window,
 .background,
 .blanket,
@@ -18,7 +16,7 @@ box {
     box-shadow: none !important;
 }
 
-/* --- 2. THE MAIN GLASS PANEL --- */
+/* ---  THE MAIN PANEL --- */
 .control-center {
     background: rgba(10, 25, 35, 0.7) !important;
     border-radius: 18px; 
@@ -27,7 +25,7 @@ box {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4) !important;
 }
 
-/* --- 3. WIDGET CARDS (Floating effect inside the panel) --- */
+/* ---  WIDGET CARDS --- */
 .widget-title, 
 .widget-mpris, 
 .widget-volume, 
@@ -40,7 +38,7 @@ box {
     padding: 12px;
 }
 
-/* --- 4. VOLUME & BRIGHTNESS SLIDERS --- */
+/* ---VOLUME & BRIGHTNESS  --- */
 .widget-volume,
 .widget-backlight {
     color: #ffffff;
@@ -58,7 +56,7 @@ scale highlight {
     border-radius: 8px;
 }
 
-/* --- 5. MEDIA PLAYER --- */
+/* --- MEDIA PLAYER --- */
 .widget-mpris {
     color: #ffffff;
 }
@@ -67,7 +65,7 @@ scale highlight {
     border-radius: 8px;
 }
 
-/* --- 6. HEADER & BUTTONS --- */
+/* --- HEADER & BUTTONS --- */
 .widget-title {
     color: #ffffff;
     font-size: 16px;
@@ -86,7 +84,7 @@ scale highlight {
     background: rgba(191, 97, 106, 0.8); 
 }
 
-/* --- 7. NOTIFICATION BUBBLES --- */
+/* --- NOTIFICATION BUBBLES --- */
 .notification {
     background: rgba(30, 45, 60, 0.85) !important; /* Much more opaque, dark glass */
     border: 1px solid rgba(255, 255, 255, 0.15); /* Gives the bubble a clean edge */
@@ -114,7 +112,7 @@ scale highlight {
     font-size: 13px;
 }
 
-/* --- 8. POWER PROFILE BUTTONS --- */
+/* --- POWER PROFILE BUTTONS --- */
 .widget-buttons-grid {
     padding: 8px;
 }

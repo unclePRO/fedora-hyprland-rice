@@ -17,10 +17,9 @@ button {
     margin: 2rem;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
     
-    /* Image Alignment Magic */
     background-repeat: no-repeat;
-    background-position: center 35%; /* Floats the icon perfectly above the text */
-    background-size: 25%; /* Keeps the icon sharp and scaled */
+    background-position: center 35%; 
+    background-size: 25%; 
 }
 
 button:hover, button:focus {

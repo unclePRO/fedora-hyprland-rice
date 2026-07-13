@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ==============================================================================
-# Uncle PRO's Glassy Indigo - Uninstaller & Cleanup Script (Fedora)
+# Unclepro's Uninstaller & Cleanup Script (Fedora)
 # ==============================================================================
 
 echo "⚠️⚠️⚠️  WARNING: This will completely remove Hyprland, all associated packages, and your config files."

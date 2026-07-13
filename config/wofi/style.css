@@ -1,11 +1,8 @@
 window {
   margin: 0px;
- /* indigo border */
   border: 2px solid rgba(132, 94, 247, 0.8);   
   border-radius: 16px;
-  /* Liquid glass navy base */
   background-color: rgba(20, 20, 30, 0.65);    
-  /* Soft indigo glow */
   box-shadow: 0 0 22px rgba(132, 94, 247, 0.5);
 }
 
@@ -19,7 +16,6 @@ window {
   color: #e0e0e0;
 }
 
-/* Outer and inner layout boxes */
 #outer-box {
   margin: 8px;
 }
@@ -34,11 +30,9 @@ window {
   margin: 4px;
   padding: 6px 10px;
   border-radius: 12px;
-  /* The contrast: an icy cyan outline for the search box */
   border: 1px solid rgba(116, 199, 236, 0.8);
-  /* Darker sheer glass inside the search bar */
   background-color: rgba(10, 10, 15, 0.5);
-  color: #74c7ec; /* icy cyan prompt text */
+  color: #74c7ec; 
 }
 
 /* Scroll area */
@@ -52,12 +46,11 @@ window {
   padding: 6px 10px;
   margin: 2px 0;
   border-radius: 10px;
-  background-color: transparent; /* Let the window glass shine through */
+  background-color: transparent; 
 }
 
 /* The Highlighted App */
 #entry:selected {
-  /* Indigo blending into Cyan for high-tech contrast */
   background-image: linear-gradient(90deg, #845ef7, #74c7ec); 
   color: #14141e;
 }
@@ -67,7 +60,6 @@ window {
   color: #e0e0e0;
 }
 
-/* Force dark text on the bright gradient for readability */
 #entry:selected #text {
   color: #14141e; 
 }

@@ -1,6 +1,5 @@
 /* ==========================================================
- * WAYBAR CONFIGURATION
- * Aesthetic: Linux Pro / Apple Glass (Icon-Heavy)
+ * WAYBAR CONFIGURATION kinda like macos fr
  * ========================================================== */
 
 * {
@@ -44,14 +43,13 @@ window#waybar.empty #window {
 #temperature {
     background-color: transparent;
     border: none;
-    padding: 0 12px; /* Increased padding for better click targets */
+    padding: 0 12px; 
     margin: 2px 2px;
     color: @fg;
     border-radius: 6px;
     transition: all 0.2s ease;
 }
 
-/* --- BIGGER ICONS FOR HARDWARE/RIGHT MODULES --- */
 #cpu,
 #memory,
 #wireplumber,
@@ -61,7 +59,7 @@ window#waybar.empty #window {
 #bluetooth,
 #temperature,
 #custom-linux {
-    font-size: 18px; /* Bumps up icon size for that Mac menu bar weight */
+    font-size: 18px; 
 }
 
 /* --- LEFT MODULES --- */
